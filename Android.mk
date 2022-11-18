@@ -4,11 +4,10 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := android.hardware.graphics.composer@2.1-service.drmfb
+LOCAL_MODULE := android.hardware.graphics.composer@2.1-drmfb-service
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_VENDOR_MODULE := true
-LOCAL_INIT_RC := android.hardware.graphics.composer@2.1-service.drmfb.rc
-
+LOCAL_INIT_RC := android.hardware.graphics.composer@2.1-drmfb-service.rc
 LOCAL_CPP_STD := c++17
 
 LOCAL_SRC_FILES := \

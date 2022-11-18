@@ -1,4 +1,5 @@
-service vendor.hwcomposer-2-1.drmfb /vendor/bin/hw/android.hardware.graphics.composer@2.1-service.drmfb
+service vendor.hwcomposer-2-1.drmfb /vendor/bin/hw/android.hardware.graphics.composer@2.1-drmfb-service
+    interface android.hardware.graphics.composer@2.1::IComposer drmfb
     class hal animation
     user system
     group graphics drmrpc

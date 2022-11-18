@@ -46,7 +46,8 @@ int main() {
     if (!composer) {
         LOG(FATAL) << "Failed to initialize HAL";
     }
-    if (composer->registerAsService() != android::OK) {
+    constexpr char const* serviceName = "drmfb";
+    if (composer->registerAsService(serviceName) != android::OK) {
         LOG(FATAL) << "Failed to register Composer HAL";
     }
 
