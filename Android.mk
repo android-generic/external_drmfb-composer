@@ -22,7 +22,8 @@ LOCAL_SRC_FILES := \
     DrmHotplugThread.cpp
 
 LOCAL_HEADER_LIBRARIES := \
-    android.hardware.graphics.composer@2.1-hal
+    android.hardware.graphics.composer@2.1-hal \
+    libnativebase_headers
 
 LOCAL_SHARED_LIBRARIES := \
     libbase \
