@@ -41,7 +41,8 @@ LOCAL_SHARED_LIBRARIES := \
     android.hardware.graphics.mapper@3.0 \
     android.hardware.graphics.mapper@4.0 \
     android.hardware.graphics.composer@2.1 \
-    android.hardware.graphics.composer@2.1-resources
+    android.hardware.graphics.composer@2.1-resources \
+    android.hardware.graphics.allocator-V2-ndk
 
 ifeq ($(strip $(BOARD_USES_MINIGBM)), true)
     MINIGBM_PATH ?= external/minigbm
