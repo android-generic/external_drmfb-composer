@@ -45,7 +45,7 @@ LOCAL_SHARED_LIBRARIES := \
 ifeq ($(strip $(BOARD_USES_MINIGBM)), true)
     MINIGBM_PATH ?= external/minigbm
 
-    LOCAL_CFLAGS += -DUSE_MINIGBM
+    LOCAL_CFLAGS += -DUSE_MINIGBM -DHAS_NO_AIDL_METADATA
     LOCAL_SRC_FILES += DrmFramebufferMinigbm.cpp
     LOCAL_C_INCLUDES += $(MINIGBM_PATH)/cros_gralloc
     LOCAL_SHARED_LIBRARIES += libnativewindow # TODO: Remove
